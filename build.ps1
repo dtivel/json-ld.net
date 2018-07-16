@@ -104,6 +104,6 @@ popd
 
 Write-Host "Creating nupkg"
 
-& $DotNetExe pack (Join-Path $RepoRoot src\json-ld.net) --configuration $Configuration --output $ArtifactsDir
+& $DotNetExe pack (Join-Path $RepoRoot src\json-ld.net.StrongName) --configuration $Configuration --output $ArtifactsDir
 
 Write-Host "Success!"
